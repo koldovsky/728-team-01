@@ -61,7 +61,7 @@
     margin-top: 100px;
     padding-bottom: 100px;
 
-    background: rgba(28, 124, 220, 0.987) url(img/backgroung-photo.webp);
+    background: rgba(28, 124, 220, 0.987) url(https://res2.weblium.site/res/5ad5c7316678f100250a4708/5ad5eecf6678f100250b1a86.png);
 
 }
 
@@ -123,6 +123,7 @@
     align-items: center;
     text-align: center;
     padding: 10px 20px;
+    min-height: 211px;
 }
 
 .values__text {
