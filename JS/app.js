@@ -20,7 +20,7 @@
         },
         {
 
-            image: "img/img_features/activities2.0svg",
+            image: "img/img_features/activities2.svg",
             description: "Outdoor activities"
 
         },
