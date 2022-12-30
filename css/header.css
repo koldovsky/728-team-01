@@ -24,11 +24,11 @@
 .header__menu{
     color: black;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     text-decoration: none;
     font-weight:500;
-    bottom: 10px;
-    margin: 5px;
+    align-items: center;
+    margin-right:20px;
     
 
     
@@ -38,6 +38,7 @@
 @media (min-width:500px) {
     .header-container{
         display: flex;
+        justify-content: space-between;
     }
     .header__menu {
         flex-direction:row;
