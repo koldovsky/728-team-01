@@ -6,6 +6,10 @@
 .header__title,
 .herader__lower,
 
+.header__logotip {
+    align-items: center;
+}
+
 .header-nav__logo {
     text-align: center;
     font-size: 26px;
@@ -20,6 +24,46 @@
     color: #567491;
 }
 
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    z-index: 2;
+
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
 .header__menu {
     color: black;
     display: flex;
@@ -32,52 +76,74 @@
     justify-content: center;
     flex: 1;
 
-
-
-
-
 }
+
 
 @media (min-width:500px) {
     .header-container {
         display: flex;
         align-items: center;
-        margin:auto;
+        margin: auto;
+    }
+}
 
+.header__bunner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header-banner.webp);
+    background-size: cover;
+    min-height: 650px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+}
+
+.header__upper {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 15px;
+
+}
+
+.header__title {
+    font-size: 80px;
+    text-align: center;
+    color: #0783f7;
+    margin: 0px;
+}
+
+.herader__lower {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+@media (max-width: 600px) {
+    .header__burger-btn {
+        display: block;
     }
 
-    .header__bunner {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header-banner.webp);
-        background-size: cover;
-        min-height: 650px;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+    .header-container {
+        position: absolute;
+        left: -350px;
+        top: 0;
+        width: 350px;
+        background-color: white;
+        padding: 70px 20px 20px 20px;
+        transition: transform .5s;
     }
 
-    .header__upper {
-        font-size: 30px;
-        text-align: center;
-        color: white;
-        margin: 15px;
-
+    .header__menu {
+        display: block;
+        font-size: 20px;
+        padding: 10px 0px;
     }
 
-    .header__title {
-        font-size: 80px;
-        text-align: center;
-        color: #0783f7;
-        margin: 0px;
-    }
+    .header.open .header-container {
+        transform: translateX(100%);
 
-    .herader__lower {
-        font-size: 16px;
-        text-align: center;
-        color: white;
-        margin: 50px;
     }
 }

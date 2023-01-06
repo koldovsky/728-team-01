@@ -8,18 +8,23 @@
     <title>Careers page</title>
     <link rel="shortcut icon" href="img/careers-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/burger.js"></script>
 </head>
 
 <body>
 
     <!-- Veniarskyi Pavlo -->
-    <header class="header">
+    <header class="header open">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
         <nav class="header-container">
-             
             <span class="header-nav__logo"> Cloudy </span>
-            <span class="header-nav"> Group </span>
-            </div>
-            <div class="header__menu">
+            <span class="header-nav">Group</span>
+
+
+            <nav class="header__menu">
+
                 <a href="#about" class="header__menu">About</a>
                 <a href="#benefits" class="header__menu">Benefits</a>
                 <a href="#values" class="header__menu">Values</a>
@@ -27,13 +32,14 @@
                 <a href="#open-positions" class="header__menu">Open Positions</a>
                 <a href="#apply" class="header__button">APPLY</a>
 
-            </div>
+            </nav>
         </nav>
+
         <div class="header__bunner">
             <p class="header__upper">Start your career in</p>
             <h1 class="header__title">Cloudy Group</h1>
             <p class="herader__lower">We are the people who dream & do</p>
-            <a href="#apply" class="header__apply button">BROWSE VACANCIES</a>
+            <a href="#open-positions" class="header__apply button">BROWSE VACANCIES</a>
 
         </div>
     </header>
@@ -120,22 +126,14 @@
 
         <div class="container">
             <h3 class="features__title">More Sweet Perks</h3>
-            <div class=" main-products container">
-                <div class="main-products__carousel carousel">
-                <div class="carousel__inner">
-                    <button class="carousel__prev">⬅️</button>
-                    <div class="carousel__slide">
-                        
-                    </div>
-                    <button class="carousel__next">➡️</button>
-        
-                </div> <!-- Features ---->
-            </div>
+            <div class="features">
+
+
             </div>
         </div>
 
 
-        <div class="values" id="values">
+        <div class="values">
             <div class="container">
                 <h3 class="values__title">Our Values</h3>
                 <div class="values__inner">
@@ -478,8 +476,6 @@
     </footer>
 
     <script src="js/benefits.js"></script>
-
-    <script src="js/slider.js"></script>
 </body>
 
 </html>
