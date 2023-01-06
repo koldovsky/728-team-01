@@ -1,0 +1,25 @@
+.main-products__carousel .carousel__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+  
+  .main-products__carousel .carousel__slide {
+    display: flex;
+  }
+  
+  .slide {
+    padding: 0 55px;
+  }
+  
+  
+  
+  .carousel__prev,
+  .carousel__next {
+    padding: 10px;
+    background-color: rgb(139 190 249);
+    border-radius: 50%;
+    border: none;
+  
+  }
