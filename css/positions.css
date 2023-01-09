@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.accordion-body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+:root {
+  font-family: Montserrat,sans-serif;
+}
+
+.open-postions__header {
+  padding-bottom: 20px;
+  font-family: Montserrat,sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 40.8px;
+  color:#12283c;
+}
+
+.open-positions__about-company {
+  font-family:  'Varela Round', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #567491;
+}
+
+
+
+.open-positions {
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:30px;
+}
+
+.h2 {
+  padding-bottom: 20px;
+}
+
+.accordion__title {
+font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 30px;
+  position: relative;
+  padding: 10px 0;
+  color: #12283c;
+  cursor: pointer;
+}
+
+.job-description {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #12283c;
+}
+
+.job-description__text {
+  font-family:'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  color: #567491;
+}
+
+.job-responsibilities {
+  padding-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #12283c;
+}
+
+.job-responsibilities__text {
+   font-family:'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  color: #567491;
+}
+
+.job-expectations {
+  padding-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #12283c;
+}
+
+.job-expectations__text {
+   font-family:'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  color: #567491;
+}
+ 
+.text {
+    text-align: left;
+
+}
+
+ul {
+    list-style: none;
+  padding: 0px;
+}
+
+ul li:before {
+    content:  "−";
+    position: relative;
+    left:    -5px;
+}
+
+.accordion {
+  max-width: 1200px;
+  margin: 100px auto;
+  color: black;
+  background-color: white;
+
+}
+
+.accordion__item {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion__title::before {
+  content: '+';
+  font-family:'Varela Round';
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion__content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.accordion hr {
+  width: 100%;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.active .accordion__title::before {
+  content: '−';
+
+}
+
+.active .accordion__content {
+  height: 100%;
+  width: 100%
+  
+}
+
