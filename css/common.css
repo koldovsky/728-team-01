@@ -7,6 +7,17 @@
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
+    --footer-background-color: #12283c;
+    --footer-border-color: #374a5a;
+    --footer-logo-text-color: #fff;
+    --footer-subscribe-text-color: #3e5973;
+    --footer-form-field-background-color:#2c4051;
+    --footer-button-background-color:#0783f7;
+    --footer-button-hover-color:#2395ff;
+    --footer-button-hover-color-nav:#0a6ac4;
+    --footer-follow-us: #fff;
+    --footer-follow-us-title: #11283C;
+    --footer-follow-us-join: #567491;
 }
 
 
@@ -23,4 +34,8 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
 }
