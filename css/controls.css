@@ -1,0 +1,30 @@
+.header__apply{
+    background-color:#0783f7;
+    border: 20px #0783f7;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin:0;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+.header__button{
+    background-color:#0783f7;
+    border:1px #0783f7;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin:0;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+}

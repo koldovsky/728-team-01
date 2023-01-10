@@ -1,0 +1,177 @@
+.features {
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.features__title {
+    color: #12283c;
+    font-size: 42px;
+    line-height: 1.2;
+
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+
+.features__text {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 800;
+    color: #000;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.features__photo {
+    display: flex;
+    justify-content: center;
+}
+
+.features__img {
+    width: 100px;
+
+}
+
+.plus {
+    width: 130px;
+}
+
+.features__item {
+    width: 25%;
+    padding: 20px;
+}
+
+
+
+
+/****values*****/
+
+.values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    background: rgba(28, 124, 220, 0.987) url(https://res2.weblium.site/res/5ad5c7316678f100250a4708/5ad5eecf6678f100250b1a86.png);
+
+}
+
+.values__title {
+    color: #12283c;
+    font-size: 42px;
+    line-height: 1.2;
+
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.values__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6px;
+    border-radius: 6px;
+    width: 60px;
+
+    background-image: -webkit-linear-gradient(left, #567491, #0783f7);
+    background-image: linear-gradient(90deg, #567491, #0783f7);
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.values__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.values__col {
+    width: 50%;
+    padding: 30px;
+
+}
+
+.values__subtitle {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 800;
+    color: #000;
+    margin: 20px 0;
+}
+
+.values__col-one {
+    box-shadow: 0 0 15px 0px rgb(0 0 0 / 7%);
+    border-radius: 10px;
+
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    min-height: 211px;
+}
+
+.values__text {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: .05em;
+}
+
+@media (max-width: 1160px) {
+    .features__item {
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .values__col {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .features__item {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 420px) {
+    .values__col {
+        padding: 20px 0;
+    }
+
+    .features__img {
+        width: 75px;
+
+
+    }
+
+    .features__title {
+        font-size: 34px;
+    }
+
+    .values__title {
+        font-size: 34px;
+    }
+
+}
