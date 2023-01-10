@@ -8,30 +8,38 @@
     <title>Careers page</title>
     <link rel="shortcut icon" href="img/careers-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/burger.js"></script>
 </head>
 
 <body>
 
     <!-- Veniarskyi Pavlo -->
-    <header class="header">
+    <header class="header open">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
         <nav class="header-container">
             <span class="header-nav__logo"> Cloudy </span>
-            <span class="header-nav"> Group </span>
-            <div class="header__menu">
-                <a href="#about" class="header__menu">About</a>
-                <a href="#benefits" class="header__menu">Benefits</a>
+            <span class="header-nav">Group</span>
+
+
+            <nav class="header__menu">
+
+                <a href="#testiomonials" class="header__menu">About</a>
+                <a href="#testiomonials1" class="header__menu">Benefits</a>
                 <a href="#values" class="header__menu">Values</a>
-                <a href="#our-people" class="header__menu">Our People</a>
+                <a href="#values" class="header__menu">Our People</a>
                 <a href="#open-positions" class="header__menu">Open Positions</a>
                 <a href="#apply" class="header__button">APPLY</a>
 
-            </div>
+            </nav>
         </nav>
+
         <div class="header__bunner">
             <p class="header__upper">Start your career in</p>
             <h1 class="header__title">Cloudy Group</h1>
             <p class="herader__lower">We are the people who dream & do</p>
-            <a href="#apply" class="header__apply button">BROWSE VACANCIES</a>
+            <a href="#open-positions" class="header__apply button">BROWSE VACANCIES</a>
 
         </div>
     </header>
@@ -51,7 +59,7 @@
         </section>
 
         <section class="benefist">
-            <h2 id="testiomonials" class="benefist">Benefits of working here</h2>
+            <h2 id="testiomonials1" class="benefist">Benefits of working here</h2>
 
             <div class="health">
                 <div class="features__photo">
@@ -119,16 +127,25 @@
 
         <div class="container">
             <h3 class="features__title">More Sweet Perks</h3>
-            <div class="features">
 
-               
-            </div> 
+            <div class=" main-products container">
+                <div class="main-products__carousel carousel">
+                    <div class="carousel__inner">
+                        <button class="carousel__prev">⬅️</button>
+                        <div class="carousel__slide">
+
+                        </div>
+                        <button class="carousel__next">➡️</button>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
 
         <div class="values">
             <div class="container">
-                <h3 class="values__title">Our Values</h3>
+                <h3 id="values" class="values__title">Our Values</h3>
                 <div class="values__inner">
 
 
@@ -206,196 +223,314 @@
         </div>
 
         <!-- Tetiana Boiko - Job Openings -->
-
-        <div class="open-positions">
-            <h2 id="open-positions" class="open-postions__header">Job Openings</h2>
-            <p class="open-positions__about-company"> We’re a company that’s changing up the traditional recruiting
-                process, our own included. If you’re a good fit for one of our open roles, we’ll be reaching out to you.
-                If you’re passionate about our mission and can’t wait to hear from us, let us know.</p>
-        </div>
-        <div class="wrapper">
+        <div class="accordion-body">
             <div class="accordion">
-                <details class="accordion__item">
-                    <summary class="accordion__title">Community Operations & Support Specialist</summary>
-                    <h3 class="job-decription">About the job</h3>
-                    <p class="job-decription__text">Cloudy Group’s core is a global community of expert software
-                        testers. Community team helps to onboard, support and nurture our testers providing them
-                        meaningful career and endless growth opportunities. Our ultimate vision is to give every tester
-                        an opportunity to develop their professional skills and enjoy building a software testing career
-                        feeling engaged and fulfilled.</p>
-                    <h3 class="job-responsibilities">Key responsibilities</h3>
-                    <p class="job-respnsibilities__text">
-                        - Providing professional help and support to our testers' community through monitoring and
-                        engaging in relevant discussions and Q&A in our community communication channels (e.g. Slack,
-                        Intercom, email).
-                        - Contributing to the testers’ quality monitoring process and addressing any performance-related
-                        concerns to ensure high quality of delivered testing results.
-                        - Providing regular guidance to community members, organizing processes for efficient two-way
-                        feedback.
-                        - Mapping community know-how, creating knowledge base articles, sharing important updates and
-                        news with community members.
-                        - Supporting our QA team with project-based tester recruitment and management.
-                        - Working closely together with Community, Product, QA, Finance and other teams to support our
-                        testers' growth and development.
-                        - Helping our Product Managers with gathering input for community-related product development,
-                        including writing user stories and requirements for new features.
-                        - Continually evaluating Testlio's internal and external processes and workflows. Recommending
-                        possible improvements that will keep us moving in the right direction." </p>
-                    <h3 class="our-expactations">What do we expect from you?</h3>
-                    <p class="our-expactations__text"> - Excellent communicator with an ability to use both data and
-                        intuition to form decisions.
-                        - Being tech-savvy and fascinated with technology.
-                        - Being able to request, collect, and analyze data to make data-driven decisions.
-                        - Experience in client-facing communication - support, project management or similar role.
-                        - General understanding of software development lifecycle, preferably accompanied with a degree
-                        in computer science or similar.
-                        - Thriving in a fast-paced and challenging environment, being able to learn and adapt quickly.
-                        - Taking initiative, working independently and efficiently without close supervision.
-                        - You have a desire to contribute to building the greatest global community of software testers.
-                        - You love working with people and have a passion to change the world.
-                        - You #lovetesting. Hands-on experience in different areas of software testing is a strong plus.
-                    </p>
-                </details>
-                <details class="accordion__item">
-                    <summary class="accordion__title">Software Engineer</summary>
-                    <h3 class="job-decription">About the job</h3>
-                    <p class="job-decription__text">Cloudy Group is growing fast. We need strong software engineers to
-                        meet the challenges of a growing startup. Our software engineers are responsible for building
-                        modern and fast single page web applications and REST APIs, using tools like ES6, React,
-                        Node.js, PHP, the Flux application architecture, SCSS and more.
-                        You will be a part of a product team that is focused on one of the areas of Cloudy Group roadmap
-                        and owning it end-to-end as much as possible to reduce dependencies. You will closely work with
-                        the product manager, designer, and other engineers to implement necessary features for the
-                        Cloudy Group platform. You will be able to dig into various parts of application development as
-                        well as give your voice in architecture-related decisions.</p>
-                    <h3 class="job-responsibilities">Key responsibilities</h3>
-                    <p class="job-respnsibilities__text">
-                        - Design and implement modern single page applications using Node.js, PHP, ES6, React and the
-                        Flux architecture.
-                        - Partner with Product Manager and Design to solve problems - get things done and enable value
-                        proposition.
-                        - Own, operate and maintain your team's services across all development environments, including
-                        production.
-                        - Be proud of your work. Beside good code, you also value the impact and seek for validation via
-                        telemetry or direct customer feedback.
-                        - Eager to learn continuously new things. You celebrate if you can learn new things, regardless
-                        of the matter (e.g. business, technology or some good anecdote). </p>
-                    <h3 class="our-expactations">What do we expect from you?</h3>
-                    <p class="our-expactations__text"> - You are a team player - individual goals come second, team
-                        goals come first.
-                        - You have experience in building web applications.
-                        - Proven track record of success and failures - we believe in experience and learning. Not
-                        everything goes right. You know your failures, learned from it and know how to avoid it.
-                        - Knowledge and experience in JavaScript, Node.js, React, HTML, CSS.
-                        - Experience with version control systems, preferably Git and Github.
-                        - Experience working with REST and/or HTTP API's.
-                        - Knowledge of relational databases and data modeling.
-                        - Full English professional proficiency. </p>
-                </details>
-                <details class="accordion__item">
-                    <summary class="accordion__title">Enterprise Account Executive</summary>
-                    <h3 class="job-decription">About the job</h3>
-                    <p class="job-decription__text">Cloudy Group is looking for an Enterprise Account Executive. We’re
-                        seeking someone to be responsible for identifying, qualifying, and closing corporate sales
-                        opportunities. This person is a strategic, savvy, has impeccable communication skills, and is
-                        experienced in outreach and negotiating with SVP/C-level executives.
-                        This position is made for a skilled and engaging individual who is comfortable interacting with
-                        clients across industries. As the Account Executive, you will be closing deals in the $50-75k
-                        MRR range. Managing and growing high profile accounts with strategy and intent is an extremely
-                        critical part of this role.
-                        The ideal candidate will possess a demonstrated ability to develop strong business relationships
-                        and influence decision makers. Must have an eye for high growth opportunities and a keen
-                        understanding of driving revenue.</p>
-                    <h3 class="job-responsibilities">Key responsibilities</h3>
-                    <p class="job-respnsibilities__text">- Managing complete and complex sales cycles from to lead to
-                        close.
-                        - Target global accounts and analyze needs, develop and negotiate terms, and close business.
-                    </p>
-                    <h3 class="our-expactations">What do we expect from you?</h3>
-                    <p class="our-expactations__text"> - Bachelor’s Degree along with 4-6 years of software sales
-                        experience.
-                        - Experience building a new business pipeline, and forecasting sales activity and revenue
-                        achievement.
-                        - Demonstrated success in accurately evaluating corporate customer needs.
-                        - Excellent written and verbal communication skills with the ability to influence others.
-                        - Experience using Salesforce.
-                        - Willingness to approach top executives (CTOs, SVP Product, SVP Engineering) with a clear value
-                        proposition
-                        - Ability to accurately identify when an opportunity is real or not.
-                        - Self-starter who can multi-task and adapt to evolving situations and capable of connecting the
-                        dots with complex or stalling decision makers.
-                        - Experience in mobile is preferred. </p>
-                </details>
-                <details class="accordion__item">
-                    <summary class="accordion__title">QA Project Manager</summary>
-                    <h3 class="job-decription">About the job</h3>
-                    <p class="job-decription__text">Our client base is growing with enormous pace. Each client is
-                        important to us and we have signed up to give them the best testing service, a service that they
-                        will always remember.
-                        Our QA Project Managers are the key to our success in ensuring that every new client’s journey
-                        in Cloudy Group is as smooth as possible. They help us thoroughly understand clients’
-                        requirements, prepare the test strategy and make sure that the whole testing team works towards
-                        common goals to execute with high quality.
-                    </p>
-                    <h3 class="job-responsibilities">Key responsibilities</h3>
-                    <p class="job-respnsibilities__text">
-                        - Establish and maintain healthy relationships with clients by conducting regular status and
-                        feedback calls.
-                        - Take full ownership and excellent care of our clients’ testing projects.
-                        - Analyze our customers’ testing needs, agree on the criteria and timeline, and build out
-                        testing strategies.
-                        - Manage the progress and understand the optimal hour utilization of our customers’ projects.
-                        - Report back about problems identified during testing, including technical and business-related
-                        risks.
-                        - Proactively search for areas to improve and seek to increase client satisfaction.
-                        - Work together with talented testers of different cultural backgrounds from around the world.
-                        - Define new or give suggestions for improvements to our existing testing processes, and
-                        effectively collaborate with other Testlio teams to bring the best solutions to life.
-                    </p>
-                    <h3 class="our-expactations">What do we expect from you?</h3>
-                    <p class="our-expactations__text"> - Focused interest in the field of testing and a passion to
-                        change the world.
-                        - Established excellent client-facing and interpersonal communication skills.
-                        - More than 3 years of successful working experience in IT related project management with
-                        previous exposure to mobile consumer applications.
-                        - Solid understanding of software testing patterns, frameworks, and methodologies.
-                        - Experience in leading a QA team.
-                        - You thrive under pressure and easily obtain new information.
-                        - You are able to manage time well, prioritize tasks, and pay attention to details.
-                        - You love working with people and enjoy work in a dynamic environment. </p>
-                </details>
-                <details class="accordion__item">
-                    <summary class="accordion__title">Test Lead</summary>
-                    <h3 class="job-decription">About the job</h3>
-                    <p class="job-decription__text">Each of our clients is important and has signed up for the
-                        highest-quality testing available. We aim to deliver results that consistently exceed
-                        expectations.
-                        As our client base continues to grow at high speed, we’re looking for in-house Test Leads to
-                        join our QA team. Test Leads are essential to our success. They help determine project scope,
-                        manage test cycles, and report results. Test Leads work closely with our testers as well as our
-                        QA Project Managers to ensure testing meets Cloudy Group’s quality standards.
-                    </p>
-                    <h3 class="job-responsibilities">Key responsibilities</h3>
-                    <p class="job-respnsibilities__text">
-                        - Coordinate Test Cycles - plan scope, estimate cycle length, invite testers and assign tasks.
-                        - Create and update mindmaps, test cases, test suites and monitor the execution of those suites.
-                        - Measure, control and write summary reports on the testing progress and results.
-                        - Solve technical challenges such as obtaining logs or simulating geographical location.
-                        - Support testers by answering their questions in their work and escalating any project
-                        blockers.
-                        - Review testers work and give them meaningful feedback with suggestions for improvements, to
-                        nurture their development.
-                        - Engage in client communication as per the guidance of the Project Manager. </p>
-                    <h3 class="our-expactations">What do we expect from you?</h3>
-                    <p class="our-expactations__text"> - Hands on experience in software testing and writing tests.
-                        - Experience leading testing activities on large, complex projects.
-                        - Exposure to software testing patterns, frameworks, and methodologies.
-                        - Passion, curiosity and focused interest in software testing.
-                        - Quality is the fabric of your being.
-                        - A testers mindset - analytical, detail oriented and able to manage time well.
-                        - You love working with people and you’re passionate about changing the world.</p>
-                </details>
+                <div class="open-positions">
+                    <h2 id="open-positions" class="open-postions__header">Job Openings</h2>
+                    <div class="open-positions__about-company"> We’re a company that’s changing up the traditional
+                        recruiting
+                        process, our own included. If you’re a good fit for one of our open roles, we’ll be reaching out
+                        to you.
+                        If you’re passionate about our mission and can’t wait to hear from us, let us know.</div>
+                </div>
 
+
+                <div class="accordion__item">
+                    <div class="accordion__title">Community Operations & Support Specialist</div>
+                    <div class="accordion__content">
+                        <h3 class="job-description">About the job</h3>
+                        <div class="job-description__text">Cloudy Group’s core is a global community of expert software
+                            testers. Community team helps to onboard, support and nurture our testers providing them
+                            meaningful career and endless growth opportunities. Our ultimate vision is to give every
+                            tester
+                            an opportunity to develop their professional skills and enjoy building a software testing
+                            career
+                            feeling engaged and fulfilled.</div>
+                        <h3 class="job-responsibilities">Key responsibilities</h3>
+                        <div class="job-responsibilities__text">
+                            <ul>
+                                <li> Providing professional help and support to our testers' community through
+                                    monitoring and
+                                    engaging in relevant discussions and Q&A in our community communication channels
+                                    (e.g. Slack,
+                                    Intercom, email).</li>
+                                <li> Contributing to the testers’ quality monitoring process and addressing any
+                                    performance-related
+                                    concerns to ensure high quality of delivered testing results.</li>
+                                <li> Providing regular guidance to community members, organizing processes for efficient
+                                    two-way
+                                    feedback.</li>
+                                <li> Mapping community know-how, creating knowledge base articles, sharing important
+                                    updates and
+                                    news with community members.</li>
+                                <li> Supporting our QA team with project-based tester recruitment and management.
+                                    - Working closely together with Community, Product, QA, Finance and other teams to
+                                    support our
+                                    testers' growth and development.</li>
+                                <li> Helping our Product Managers with gathering input for community-related product
+                                    development,
+                                    including writing user stories and requirements for new features.</li>
+                                <li> Continually evaluating Testlio's internal and external processes and workflows.
+                                    Recommending
+                                    possible improvements that will keep us moving in the right direction. </li>
+                            </ul>
+                        </div>
+
+                        <h3 class="job-expectations">What do we expect from you?</h3>
+                        <div class="job-expectations__text">
+                            <ul>
+                                <li> Excellent communicator with an ability to use both data and
+                                    intuition to form decisions.</li>
+                                <li> Being tech-savvy and fascinated with technology. </li>
+                                <li> Being able to request, collect, and analyze data to make data-driven decisions.
+                                </li>
+                                <li> Experience in client-facing communication - support, project management or similar
+                                    role.</li>
+                                <li> General understanding of software development lifecycle, preferably accompanied
+                                    with a degree
+                                    in computer science or similar.</li>
+                                <li> Thriving in a fast-paced and challenging environment, being able to learn and adapt
+                                    quickly.</li>
+                                <li>Taking initiative, working independently and efficiently without close supervision.
+                                </li>
+                                <li> You have a desire to contribute to building the greatest global community of
+                                    software testers.</li>
+                                <li> You love working with people and have a passion to change the world.</li>
+                                <li> You #lovetesting. Hands-on experience in different areas of software testing is a
+                                    strong plus.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="accordion__item">
+                    <div class="accordion__title">Software Engineer</div>
+                    <div class="accordion__content">
+                        <h3 class="job-description">About the job</h3>
+                        <div class="job-description__text">Cloudy Group is growing fast. We need strong software
+                            engineers to
+                            meet the challenges of a growing startup. Our software engineers are responsible for
+                            building
+                            modern and fast single page web applications and REST APIs, using tools like ES6, React,
+                            Node.js, PHP, the Flux application architecture, SCSS and more.
+                            You will be a part of a product team that is focused on one of the areas of Cloudy Group
+                            roadmap
+                            and owning it end-to-end as much as possible to reduce dependencies. You will closely work
+                            with
+                            the product manager, designer, and other engineers to implement necessary features for the
+                            Cloudy Group platform. You will be able to dig into various parts of application development
+                            as
+                            well as give your voice in architecture-related decisions.</div>
+                        <h3 class="job-responsibilities">Key responsibilities</h3>
+                        <div class="job-responsibilities__text">
+                            <ul>
+                                <li> Design and implement modern single page applications using Node.js, PHP, ES6, React
+                                    and the
+                                    Flux architecture.</li>
+                                <li> Partner with Product Manager and Design to solve problems - get things done and
+                                    enable value
+                                    proposition.</li>
+                                <li> Own, operate and maintain your team's services across all development environments,
+                                    including
+                                    production.</li>
+                                <li> Be proud of your work. Beside good code, you also value the impact and seek for
+                                    validation via
+                                    telemetry or direct customer feedback.</li>
+                                <li> Eager to learn continuously new things. You celebrate if you can learn new things,
+                                    regardless
+                                    of the matter (e.g. business, technology or some good anecdote).</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="job-expectations">What do we expect from you?</h3>
+                        <div class="job-expectations__text">
+                            <ul>
+                                <li> You are a team player - individual goals come second, team
+                                    goals come first. </li>
+                                <li> You have experience in building web applications.</li>
+                                <li> Proven track record of success and failures - we believe in experience and
+                                    learning. Not
+                                    everything goes right. You know your failures, learned from it and know how to avoid
+                                    it.</li>
+                                <li> Knowledge and experience in JavaScript, Node.js, React, HTML, CSS.</li>
+                                <li> Experience with version control systems, preferably Git and Github.</li>
+                                <li> Experience working with REST and/or HTTP API's.</li>
+                                <li> Knowledge of relational databases and data modeling.</li>
+                                <li>Full English professional proficiency.</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr>
+
+                <div class="accordion__item">
+                    <div class="accordion__title">Enterprise Account Executive</div>
+                    <div class="accordion__content">
+                        <h3 class="job-description">About the job</h3>
+                        <div class="job-description__text">Cloudy Group is looking for an Enterprise Account Executive.
+                            We’re
+                            seeking someone to be responsible for identifying, qualifying, and closing corporate sales
+                            opportunities. This person is a strategic, savvy, has impeccable communication skills, and
+                            is
+                            experienced in outreach and negotiating with SVP/C-level executives.
+                            This position is made for a skilled and engaging individual who is comfortable interacting
+                            with
+                            clients across industries. As the Account Executive, you will be closing deals in the
+                            $50-75k
+                            MRR range. Managing and growing high profile accounts with strategy and intent is an
+                            extremely
+                            critical part of this role.
+                            The ideal candidate will possess a demonstrated ability to develop strong business
+                            relationships
+                            and influence decision makers. Must have an eye for high growth opportunities and a keen
+                            understanding of driving revenue.</div>
+                        <h3 class="job-responsibilities">Key responsibilities</h3>
+                        <div class="job-responsibilities__text">
+                            <ul>
+                                <li> Managing complete and complex sales cycles from to lead to
+                                    close.</li>
+                                <li> Target global accounts and analyze needs, develop and negotiate terms, and close
+                                    business.</li>
+                            </ul>
+                        </div>
+                        <h3 class="job-expectations">What do we expect from you?</h3>
+                        <div class="job-expectations__text">
+                            <ul>
+                                <li> Bachelor’s Degree along with 4-6 years of software sales
+                                    experience.</li>
+                                <li> Experience building a new business pipeline, and forecasting sales activity and
+                                    revenue
+                                    achievement.</li>
+                                <li> Demonstrated success in accurately evaluating corporate customer needs.</li>
+                                <li> Excellent written and verbal communication skills with the ability to influence
+                                    others.</li>
+                                <li> Experience using Salesforce.</li>
+                                <li>Willingness to approach top executives (CTOs, SVP Product, SVP Engineering) with a
+                                    clear value
+                                    proposition.</li>
+                                <li>Ability to accurately identify when an opportunity is real or not.</li>
+                                <li>Self-starter who can multi-task and adapt to evolving situations and capable of
+                                    connecting the
+                                    dots with complex or stalling decision makers.</li>
+                                <li>Experience in mobile is preferred. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion__item">
+                    <div class="accordion__title">QA Project Manager</div>
+                    <div class="accordion__content">
+                        <h3 class="job-description">About the job</h3>
+                        <div class="job-description__text">Our client base is growing with enormous pace. Each client is
+                            important to us and we have signed up to give them the best testing service, a service that
+                            they
+                            will always remember.
+                            Our QA Project Managers are the key to our success in ensuring that every new client’s
+                            journey
+                            in Cloudy Group is as smooth as possible. They help us thoroughly understand clients’
+                            requirements, prepare the test strategy and make sure that the whole testing team works
+                            towards
+                            common goals to execute with high quality.
+                        </div>
+                        <h3 class="job-responsibilities">Key responsibilities</h3>
+                        <div class="job-responsibilities__text">
+                            <ul>
+                                <li>Establish and maintain healthy relationships with clients by conducting regular
+                                    status and
+                                    feedback calls.</li>
+                                <li>Take full ownership and excellent care of our clients’ testing projects</li>
+                                <li>Analyze our customers’ testing needs, agree on the criteria and timeline, and build
+                                    out
+                                    testing strategies.</li>
+                                <li>Manage the progress and understand the optimal hour utilization of our customers’
+                                    projects.</li>
+                                <li>Report back about problems identified during testing, including technical and
+                                    business-related
+                                    risks.</li>
+                                <li>Proactively search for areas to improve and seek to increase client satisfaction.
+                                </li>
+                                <li>Work together with talented testers of different cultural backgrounds from around
+                                    the world.</li>
+                                <li>Define new or give suggestions for improvements to our existing testing processes,
+                                    and
+                                    effectively collaborate with other Testlio teams to bring the best solutions to
+                                    life.</li>
+                            </ul>
+                        </div>
+                        <h3 class="job-expectations">What do we expect from you?</h3>
+                        <div class="job-expectations__text">
+                            <ul>
+                                <li>Focused interest in the field of testing and a passion to
+                                    change the world.</li>
+                                <li>Established excellent client-facing and interpersonal communication skills.</li>
+                                <li>More than 3 years of successful working experience in IT related project management
+                                    with
+                                    previous exposure to mobile consumer applications.</li>
+                                <li>Solid understanding of software testing patterns, frameworks, and methodologies.
+                                </li>
+                                <li>Experience in leading a QA team.</li>
+                                <li>You thrive under pressure and easily obtain new information.</li>
+                                <li>You are able to manage time well, prioritize tasks, and pay attention to details.
+                                </li>
+                                <li>You love working with people and enjoy work in a dynamic environment. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion__item">
+                    <div class="accordion__title">Test Lead</div>
+                    <div class="accordion__content">
+                        <h3 class="job-description">About the job</h3>
+                        <div class="job-description__text">Each of our clients is important and has signed up for the
+                            highest-quality testing available. We aim to deliver results that consistently exceed
+                            expectations.
+                            As our client base continues to grow at high speed, we’re looking for in-house Test Leads to
+                            join our QA team. Test Leads are essential to our success. They help determine project
+                            scope,
+                            manage test cycles, and report results. Test Leads work closely with our testers as well as
+                            our
+                            QA Project Managers to ensure testing meets Cloudy Group’s quality standards.
+                        </div>
+                        <h3 class="job-responsibilities">Key responsibilities</h3>
+                        <div class="job-responsibilities__text">
+                            <ul>
+                                <li>Coordinate Test Cycles - plan scope, estimate cycle length, invite testers and
+                                    assign tasks.</li>
+                                <li>Create and update mindmaps, test cases, test suites and monitor the execution of
+                                    those suites.</li>
+                                <li>Measure, control and write summary reports on the testing progress and results.</li>
+                                <li>Solve technical challenges such as obtaining logs or simulating geographical
+                                    location.</li>
+                                <li>Support testers by answering their questions in their work and escalating any
+                                    project
+                                    blockers.</li>
+                                <li>Review testers work and give them meaningful feedback with suggestions for
+                                    improvements, to
+                                    nurture their development.</li>
+                                <li>Engage in client communication as per the guidance of the Project Manager. </li>
+                            </ul>
+                        </div>
+                        <h3 class="job-expectations">What do we expect from you?</h3>
+                        <div class="job-expectations__text">
+                            <ul>
+                                <li>Hands on experience in software testing and writing tests.</li>
+                                <li>Experience leading testing activities on large, complex projects.</li>
+                                <li>Exposure to software testing patterns, frameworks, and methodologies.</li>
+                                <li>Passion, curiosity and focused interest in software testing.</li>
+                                <li>Quality is the fabric of your being.</li>
+                                <li>A testers mindset - analytical, detail oriented and able to manage time well.</li>
+                                <li>You love working with people and you’re passionate about changing the world.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
 
@@ -403,15 +538,34 @@
 
     </main>
 
-          <!-- Holova Oleh - 2 section -->
+    <!-- Holova Oleh - 2 section -->
 
     <footer>
-        <div class="footer_all">
+        <div class="footer__follow-us">
+            <h3>Follow Us</h3>
+            <p>Join us to stay up-to-date on our latest opportunities</p>
+            <ul class="footer__socials">
+                <li>
+                    <a href="https://www.facebook.com">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__container">
             <div class="footer__upper-part">
                 <div class="footer__upper-part_block">
-                    <div class="block__company-logo">
-                        <a class="block__company-logo_link" href="#">Cloudy Group</a>
-                    </div>
+                    <a href="#"><span class="block__company-logo_link">Cloudy Group</span></a>
                     <p class="block__text">
                         <span class="block__text_contact">Call us or send an e-mail:</span>
                         <a href="#"><span class="block__text_fhone-number">+124 567 788 33</span></a>
@@ -419,32 +573,24 @@
                         <span class="block__text_address">Siddeley St. Docklands 7-23 </span>
                     </p>
                 </div>
-                <div class="footer__upper-part_block">
-                    <nav class="footer__navigation">
-                        <ul class="footer__navigation-link">
-                            <li><a class="footer__navigation-link_about" href="#">About</a></li>
-                            <li><a class="footer__navigation-link_our-people" href="#">Our People</a></li>
-                            <li><a class="footer__navigation-link_benefits" href="#">Benefits</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__upper-part_block">
-                    <nav class="footer__navigation">
-                        <ul class="footer__navigation-link">
-                            <li><a class="footer__navigation-link_open-positions" href="#">Open Positions</a></li>
-                            <li> <a class="footer__navigation-link_values" href="#">Values</a></li>
-                            <li><a class="footer__navigation-link_apply" href="#">Apply</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__upper-part_block subscribe">
-                    <p class="subscribe_text">Subscribe to get the newest vacancies</p>
-                    <div class="subscribe_form">
-                        <form action="https://vnmn0.weblium.site/">
-                            <input type="text" placeholder="Email*">
-                            <input type="submit" value="SUBSCRIBE">
-                        </form>
+                <div class="footer__navigation-bar">
+                    <div class="footer__navigation-link">
+                        <a href="#about">About</a>
+                        <a href="#our-people">Our People</a>
+                        <a href="#benefits">Benefits</a>
                     </div>
+                    <div class="footer__navigation-link">
+                        <a href="#open-positions">Open Positions</a>
+                        <a href="#values">Values</a>
+                        <a href="#apply">Apply</a>
+                    </div>
+                </div>
+                <div class="footer__subscribe">
+                    <p>Subscribe to get the newest vacancies</p>
+                    <form class="subscribe_form" action="https://vnmn0.weblium.site/">
+                        <input class="subscribe__form-field" type="text" placeholder="Email*">
+                        <input class="subscribe__button" type="submit" value="SUBSCRIBE">
+                    </form>
                 </div>
             </div>
             <div class="footer__lower-part">
@@ -454,7 +600,12 @@
         </div>
     </footer>
 
+
+
     <script src="js/benefits.js"></script>
+    <script src="js/positions.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://kit.fontawesome.com/047e721cdf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
